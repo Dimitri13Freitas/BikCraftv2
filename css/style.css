@@ -3,14 +3,19 @@
 @import "./utilidades/cores.css";
 
 @import "./global/header.css";
+@import "./global/footer.css";
 
-/* Utilidades */
+/*Utilidades*/
 @import "./utilidades/componentes.css";
 
-/* Home */
+/*Home*/
 @import "./home/introducao.css";
 @import "./home/tecnologia.css";
 @import "./home/parceiros.css";
+@import "./home/depoimento.css";
 
-/* Bicicletas */
+/*Bicicletas*/
 @import "./bicicletas/bicicletas-lista.css";
+
+/*Seguros*/
+@import "./seguros/seguro.css";

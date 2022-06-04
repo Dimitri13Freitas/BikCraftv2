@@ -13,6 +13,7 @@
   grid-column: 1/-1;
 }
 .seguros-item {
+  border-radius:4px;
   background-color: var(--cor-12);
   padding:32px 32px 32px 60px;
   display:grid;
@@ -55,4 +56,7 @@
   .seguros {
     grid-template-columns: 1fr;
   }
+}
+#seguros .seguros {
+  padding-top: 0;
 }

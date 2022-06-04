@@ -73,7 +73,7 @@
 }
 
 @media (max-width: 600px) {
-    .tecnologia-vantagens {
-      flex-direction: column;
-    }
+  .tecnologia-vantagens {
+    flex-direction: column;
+  }
 }

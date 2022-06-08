@@ -38,8 +38,6 @@ function ativarPergunta(event) {
   const ativa = resposta.classList.contains("ativa");
   console.log(ativa);
   pergunta.setAttribute("aria-expanded", ativa);
-
-
 }
 
 function eventosPerguntas(pergunta) {
@@ -50,15 +48,16 @@ perguntas.forEach(eventosPerguntas);
 
 
 // Galeria interativa
-const img = document.querySelectorAll(".bicicleta-imagens img")
+const img = document.querySelectorAll(".bicicleta-imagens img");
+const principal = document.querySelector(".bicicleta-imagens");
 
 function troca(event) {
-  const principal = document.getElementById("imgAtivo")
-  const clique = event.currentTarget;
-  principal.src = clique.src
-  principal.alt = clique.alt
-}
-
+  const img = event.currentTarget;
+ const media = matchMedia("(min-width:1000px)").matches;
+ if(media){
+    principal.prepend(img);
+  }
+};
 
 function galeria(imagem) {
   imagem.addEventListener("click", troca);
